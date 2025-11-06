@@ -10,12 +10,13 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 
+
 function App() {
+
   const location = useLocation();
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
-  const [activeSection, setActiveSection] = useState("home")
-  
+  const [activeSection, setActiveSection] = useState("home");
 
   // const scrollToHome = () => {
   //   homeRef.current?.scrollIntoView({ behavior: "smooth" });

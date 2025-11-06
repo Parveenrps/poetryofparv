@@ -14,12 +14,13 @@ const NameScroll = () => {
         const logo = gsap.utils.toArray('.logo');
         const hero = gsap.utils.toArray('.hero');
         const search = gsap.utils.toArray('.search');
+        
     
         gsap.to(nh, {
             transform: "translateX(-150%)",
             scrollTrigger :{
                 trigger: namescroll,
-                markers: true,
+                markers: false,
                 start: "top 0%",
                 end: "top -150%",
                 scrub:2,
@@ -32,7 +33,7 @@ const NameScroll = () => {
             color:"white",
             scrollTrigger :{
                 trigger: hero,
-                markers: true,
+                markers: false,
                 start: "bottom 8%",
                 end: "bottom 0%",
                 scrub:true,
@@ -45,7 +46,7 @@ const NameScroll = () => {
             duration:1,
             scrollTrigger :{
                 trigger: hero,
-                markers: true,
+                markers: false,
                 start: "bottom 8%",
                 end: "bottom 50%",
                 scrub: true,
